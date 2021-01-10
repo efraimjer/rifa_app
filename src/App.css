@@ -1,38 +1,254 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.App{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
 
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
+
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+.header{
+  width: 100vw;
+  height: 50vh;
+
+  background-color: rgb(41, 40, 40);
+  background-image: url('./images/bg01.png');
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.header h1{
+  font-size: 3em;
+}
+
+.cart-banner{
+  width: 80vw;
+  background-color:rgb(200,200,200);
+  height: 10vh;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.icon{
+  width: 50px;
+  color: whitesmoke;
+  font-size: 2em;
+  margin-left: 40px;
+
+}
+
+.cart-banner h1{
+  color: whitesmoke;
+  margin-left: 20px;
+}
+
+.pay-button{
+  background-color: greenyellow;
+  width: 100px;
+  color: black;
+  margin: 15px;
+  height:40px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  cursor: pointer;
+  right: 10vw;
+  position: absolute;
+}
+
+
+.board{
+  background-color: rgb(41, 40, 40);
+  min-height: 100vh;
+  width: 80vw;
+  border-radius: 25px;
+  margin-top: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.numbers{
+  background-color: greenyellow;
+  width: 100px;
+  color: black;
+  margin: 15px;
+  height:40px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  cursor: pointer;
+
+}
+
+.number-clicked{
+  background-color: blue;
+  width: 100px;
+  color: black;
+  margin: 15px;
+  height:40px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+
+.numberTaken{
+  background-color: grey;
+  width: 100px;
+  color: black;
+  margin: 15px;
+  height:40px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  
+}
+
+.numbers:hover{
+  background-color: rgb(208, 252, 142);
+}
+
+.numbers-taken{
+  background-color: rgb(55, 55, 55);
+  width: 100px;
+  color: black;
+  margin: 15px;
+  height:40px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  
+
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 15, 15, 0.9);
   color: white;
+  /* padding-left: 200px ;
+  padding-right: 200px; */
 }
 
-.App-link {
-  color: #61dafb;
+.modal h1, .modal p{
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.checkout{
+ 
+  width: 50vw;
+}
+
+.checkout a{
+  color: greenyellow;
+  font-size: 2em;
+  
+}
+
+footer{
+  background-color: rgba(230,230,230);
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form label{
+  margin: 5px 5px 5px 5px;
+}
+
+form input{
+  margin-left: 10px;
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .header{
+    height: 80vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header h1{
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .cart-banner{
+    margin-bottom: 50px;
+
+  }
+
+  .cart-banner h1{
+    font-size: 1em;
+
+  }
+
+  .pay-button{
+    margin-top: 135px;
+    right: 34.5vw;
+  }
+
+  footer p{
+    text-align: center;
+  }
+
+  .checkout{
+    width: 95vw;
   }
 }
