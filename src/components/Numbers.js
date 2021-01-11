@@ -4,7 +4,7 @@ import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
 
-require('dotenv').config()
+
 
 
 
@@ -93,7 +93,7 @@ export default function Numbers(props) {
             setCart(current=> [...current, props.number]);
             setTotal(current=> current+10);
             setFullCart(current=> [...current, props]);
-            console.log(fullCart)    
+            
         }        
     }
 
