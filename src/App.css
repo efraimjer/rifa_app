@@ -248,7 +248,18 @@ form input{
     text-align: center;
   }
 
+  .modal{
+    align-items: flex-start;
+  }
+
   .checkout{
     width: 95vw;
+    
+  }
+
+
+
+  .checkout p{
+    font-size: 0.6em;
   }
 }
