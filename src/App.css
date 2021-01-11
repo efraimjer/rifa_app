@@ -172,7 +172,7 @@ a{
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(15, 15, 15, 0.9);
   color: white;
   /* padding-left: 200px ;
