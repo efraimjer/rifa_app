@@ -34,34 +34,34 @@ export default function Numbers(props) {
             })
 
         if(total === 10){
-            setLink("https://mpago.la/1YgCovj")
+            setLink("https://mpago.la/1wpzuPT")
         }
         else if(total === 20){
-            setLink("https://mpago.la/1aNQ37Q")
+            setLink("https://mpago.la/2teh1cm")
         }
         else if(total === 30){
-            setLink("https://mpago.la/2UDJHDw")
+            setLink("https://mpago.la/2XjGVsG")
         }
         else if(total === 40){
-            setLink("https://mpago.la/18ZWviF")
+            setLink("https://mpago.la/2Tcb84h")
         }
         else if(total === 50){
-            setLink("https://mpago.la/2Wrzuad")
+            setLink("https://mpago.la/1QjJtxd")
         }        
         else if(total === 60){
-            setLink("https://mpago.la/1yWetZM")
+            setLink("https://mpago.la/2gxZJCY")
         }
         else if(total === 70){
-            setLink("https://mpago.la/17m5DJZ")
+            setLink("https://mpago.la/19zyWvF")
         }
         else if(total === 80){
-            setLink("https://mpago.la/2Mmeobw")
+            setLink("https://mpago.la/34m164o")
         }
         else if(total === 90){
-            setLink("https://mpago.la/2mVE9Wt")
+            setLink("https://mpago.la/2CkofZj")
         }
         else if(total === 100){
-            setLink("https://mpago.la/2BrVH8t")
+            setLink("https://mpago.la/31TttYe")
         }
             
             
