@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-            <h1>RIFA BENEFICIENTE DO MAURI E DA ENI</h1>
+            <h1>RIFA BENEFICENTE DO MAURI E DA ENI</h1>
             <h2>Serão 3 prêmios</h2>
             <h3>Sorteio dia 31 de março de 2021</h3>
             <div className="numbers" onClick={handleClick}>Prêmios</div>
